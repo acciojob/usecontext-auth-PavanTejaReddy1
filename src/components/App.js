@@ -1,9 +1,11 @@
-
 import React from "react";
 import './../styles/App.css';
 import { AuthContext } from "./AuthContext";
 
 const App = () => {
+  
+  const { isAuthenticated, toggle } = useContext(AuthContext);
+  
   return (
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
