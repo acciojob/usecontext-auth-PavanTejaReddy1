@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import App from "./components/App";
 import { AuthProvider } from './components/AuthContext';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <AuthProvider>
     <App />
-  </AuthProvider>
+  </AuthProvider>,
+  document.getElementById("root")
 );
